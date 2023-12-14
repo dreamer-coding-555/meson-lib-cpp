@@ -5,8 +5,8 @@ on:
     branches:
       - "main"
     paths:
-      - "**.c"
-      - "**.h"
+      - "**.cpp"
+      - "**.hpp"
       - "**.txt"
       - "**.build"
 
