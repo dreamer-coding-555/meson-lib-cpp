@@ -35,6 +35,8 @@
 #include <trilobite/module.hpp> // library under test
 #include <string>
 
+using namespace tscl;
+
 //
 // XUNIT-DATA: test data for use in current project test cases
 //
