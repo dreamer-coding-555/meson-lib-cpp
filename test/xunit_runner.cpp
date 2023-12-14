@@ -1,5 +1,5 @@
 /*  ----------------------------------------------------------------------------
-    File: xunit_runner.c
+    File: xunit_runner.cpp
 
     Description:
     This test file contains unit tests for the various functions and utilities provided
