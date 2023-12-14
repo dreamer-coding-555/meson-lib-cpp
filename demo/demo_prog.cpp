@@ -1,5 +1,5 @@
 /*  ----------------------------------------------------------------------------
-    File: demo.c
+    File: demo.cpp
 
     Description:
     This demo file serves as a showcase of the Trilobite Stdlib in action. It provides
@@ -29,25 +29,27 @@
     (Apache License 2.0: http://www.apache.org/licenses/LICENSE-2.0)
     ----------------------------------------------------------------------------
 */
-#include <trilobite/module.h>
-#include <stdio.h>
+#include <trilobite/module.hpp>
+#include <iostream>
+
+using namespace tscl;
 
 int main() {
     int result = add(5, 3);
 
     if (result == 8) {
-        printf("add() test passed!\n");
+        std::cout << "add() test passed!\n");
     } else {
-        printf("add() test failed. Expected: 8, Got: %d\n", result);
-    } // end statment
+        std::cout << ("add() test failed. Expected: 8, Got: " << result << std::endl;
+    } // end statement
 
     result = subtract(5, 3);
 
     if (result == 2) {
-        printf("subtract() test passed!\n");
+        std::cout << "subtract() test passed!" << std::endl;
     } else {
-        printf("subtract() test failed. Expected: 2, Got: %d\n", result);
-    } // end statment
+        std::cout << "subtract() test failed. Expected: 2, Got: " << result << std::endl;
+    } // end statement
 
     return 0;
 } // end of func
