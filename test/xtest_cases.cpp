@@ -1,5 +1,5 @@
 /*  ----------------------------------------------------------------------------
-    File: xunit_runner.c
+    File: xunit_runner.cpp
 
     Description:
     This test file contains unit tests for the various functions and utilities provided
@@ -32,14 +32,15 @@
 #include <trilobite/xtest.h>   // basic test tools
 #include <trilobite/xassert.h> // extra asserts
 
-#include <trilobite/module.h> // library under test
+#include <trilobite/module.hpp> // library under test
+#include <string>
 
 //
 // XUNIT-DATA: test data for use in current project test cases
 //
 XTEST_DATA(ProjectTestData) {
-    char *one;
-    char *two;
+    std::string one;
+    std::string two;
 }project_data;
 
 //
@@ -65,7 +66,7 @@ XTEST_CASE_FIXTURE(project_tests, basic_run_of_string) {
 
 XTEST_CASE_FIXTURE(project_tests, basic_run_of_pointer) {
     TEST_ASSERT_NOT_NULL_PTR("Coffee Cup");
-    TEST_ASSERT_NULL_PTR(NULL);
+    TEST_ASSERT_NULL_PTR(nullptr);
 }
 
 XTEST_CASE_FIXTURE(project_tests, basic_run_of_boolean) {
