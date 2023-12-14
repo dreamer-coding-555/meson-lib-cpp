@@ -1,5 +1,5 @@
 /*
-   This C header file is part of the Trilobite Stdlib, a collection of utility functions and
+   This C++ header file is part of the Trilobite Stdlib, a collection of utility functions and
    standard data structures for enhancing software development projects. Feel free to use
    and modify these utilities to streamline your software development process.
 
@@ -37,13 +37,10 @@
 
    (Apache License 2.0: http://www.apache.org/licenses/LICENSE-2.0)
 */
-#ifndef TSCL_MOD_H
-#define TSCL_MOD_H
+#ifndef TSCL_MOD_HPP
+#define TSCL_MOD_HPP
 
-#ifdef __cplusplus
-extern "C"
-{
-#endif
+namespace tscl {
 
 /**
  * Adds two integers.
@@ -68,8 +65,6 @@ int add(int a, int b);
  */
 int subtract(int a, int b);
 
-#ifdef __cplusplus
 }
-#endif
 
 #endif
