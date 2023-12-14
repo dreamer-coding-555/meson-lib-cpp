@@ -3,13 +3,13 @@ if get_option('with_test').enabled()
         dependency('tscl-xtest-c')
     ]
 
-    test_src = ['xunit_runner.c']
+    test_src = ['xunit_runner.cpp']
     test_cubes = ['cases']
 
     foreach cube : test_cubes
-        test_src += ['xtest_' + cube + '.c']
+        test_src += ['xtest_' + cube + '.cpp']
     endforeach
 
-    pizza = executable('xcli', test_src, include_directories: dir, dependencies: [test_deps, tscl_c_dep])
+    pizza = executable('xcli', test_src, include_directories: dir, dependencies: [test_deps, tscl_cpp_dep])
     test('xunit_tests', pizza)  # Renamed the test target for clarity
 endif
