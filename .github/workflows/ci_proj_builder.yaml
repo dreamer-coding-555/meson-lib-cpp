@@ -3,8 +3,8 @@ name: CI Project Builder
 on:
   push:
     paths:
-      - "**.c"
-      - "**.h"
+      - "**.cpp"
+      - "**.hpp"
       - "**.txt"
       - "**.build"
   pull_request:
