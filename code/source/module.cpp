@@ -1,5 +1,5 @@
 /*  ----------------------------------------------------------------------------
-    File: module.c
+    File: module.cpp
 
     Description:
     This source file contains the code entry point for the Trilobite Stdlib project.
@@ -29,7 +29,9 @@
     (Apache License 2.0: http://www.apache.org/licenses/LICENSE-2.0)
     ----------------------------------------------------------------------------
 */
-#include "trilobite/module.h"
+#include "trilobite/module.hpp"
+
+using namespace tscl;
 
 
 int add(int a, int b) {
