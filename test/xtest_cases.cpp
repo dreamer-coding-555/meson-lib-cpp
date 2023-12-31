@@ -67,8 +67,8 @@ XTEST_CASE_FIXTURE(project_tests, basic_run_of_string) {
 }
 
 XTEST_CASE_FIXTURE(project_tests, basic_run_of_pointer) {
-    TEST_ASSERT_NOT_NULL_PTR("Coffee Cup");
-    TEST_ASSERT_NULL_PTR(nullptr);
+    TEST_ASSERT_NOT_CNULLPTR("Coffee Cup");
+    TEST_ASSERT_CNULLPTR(nullptr);
 }
 
 XTEST_CASE_FIXTURE(project_tests, basic_run_of_boolean) {
