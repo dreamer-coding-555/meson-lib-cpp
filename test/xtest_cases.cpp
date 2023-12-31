@@ -89,7 +89,7 @@ XTEST_CASE_FIXTURE(project_tests, basic_run_of_adding) {
 //
 // XUNIT-GROUP: a group of test cases from the current test file
 //
-XTEST_GROUP_DEFINE(basic_group) {
+XTEST_DEFINE_POOL(basic_group) {
     XTEST_RUN_FIXTURE(basic_run_of_string,   project_tests, runner);
     XTEST_RUN_FIXTURE(basic_run_of_pointer,  project_tests, runner);
     XTEST_RUN_FIXTURE(basic_run_of_boolean,  project_tests, runner);
