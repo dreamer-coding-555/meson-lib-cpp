@@ -35,8 +35,6 @@
 #include <trilobite/module.hpp> // library under test
 #include <string>
 
-using namespace tscl;
-
 //
 // XUNIT-DATA: test data for use in current project test cases
 //
@@ -77,13 +75,13 @@ XTEST_CASE_FIXTURE(project_tests, basic_run_of_boolean) {
 }
 
 XTEST_CASE_FIXTURE(project_tests, basic_run_of_subtract) {
-    TEST_ASSERT_TRUE(subtract(4, 2) == 2);
-    TEST_ASSERT_FALSE(subtract(2, 55) == 2);
+    TEST_ASSERT_TRUE(tscl::subtract(4, 2) == 2);
+    TEST_ASSERT_FALSE(tscl::subtract(2, 55) == 2);
 }
 
 XTEST_CASE_FIXTURE(project_tests, basic_run_of_adding) {
-    TEST_ASSERT_TRUE(add(2, 2) == 4);
-    TEST_ASSERT_FALSE(add(2, 3) == 42);
+    TEST_ASSERT_TRUE(tscl::add(2, 2) == 4);
+    TEST_ASSERT_FALSE(tscl::add(2, 3) == 42);
 }
 
 //
