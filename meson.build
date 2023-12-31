@@ -4,5 +4,4 @@ project('TSCL Lib', 'cpp',
     default_options: ['cpp_std=c++17', 'werror=true', 'buildtype=minsize'])
 
 subdir('code')
-subdir('demo')
 subdir('test')
