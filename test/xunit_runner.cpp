@@ -34,15 +34,15 @@
 //
 // XUNIT-GROUP: list of test groups for the runner
 //
-XTEST_GROUP_EXTERN(basic_group); 
+XTEST_EXTERN_POOL(basic_group); 
 
 //
 // XUNIT-TEST RUNNER
 //
 int main(int argc, char **argv) {
-    XUnitRunner runner = XTEST_RUNNER_START(argc, argv);
+    XTEST_CREATE(argc, argv);
 
-    XTEST_GROUP_REGISTER(basic_group, runner);
+    XTEST_IMPORT_POOL(basic_group);
 
-    return XTEST_RUNNER_END(runner);
+    return XTEST_ERASE();
 } // end of func
