@@ -1,38 +1,19 @@
-/*  ----------------------------------------------------------------------------
-    File: xunit_runner.cpp
-
-    Description:
-    This test file contains unit tests for the various functions and utilities provided
-    by the Trilobite Stdlib. These tests ensure the correctness and reliability of the
-    library's components and demonstrate their intended usage.
-
-    Author: Michael Gene Brockus (Dreamer)
-    Email: michaelbrockus@gmail.com
-    Website: [Trilobite Coder Blog](https://trilobite.code.blog)
-
-    Project: Trilobite Stdlib
-
-    License: Apache License 2.0
-    SPDX Identifier: Apache-2.0
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
-
-    Unless required by applicable law or agreed to in writing, software distributed under the License
-    is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
-    or implied. See the License for the specific language governing permissions and limitations
-    under the License.
-
-    Please review the full text of the Apache License 2.0 for the complete terms and conditions.
-
-    (Apache License 2.0: http://www.apache.org/licenses/LICENSE-2.0)
-    ----------------------------------------------------------------------------
+/*
+==============================================================================
+Author: Michael Gene Brockus (Dreamer)
+Email: michaelbrockus@gmail.com
+Organization: Fossil Logic
+Description: 
+    This file is part of the Fossil Logic project, where innovation meets
+    excellence in software development. Michael Gene Brockus, also known as
+    "Dreamer," is a dedicated contributor to this project. For any inquiries,
+    feel free to contact Michael at michaelbrockus@gmail.com.
+==============================================================================
 */
-#include <trilobite/xtest.h>   // basic test tools
-#include <trilobite/xassert.h> // extra asserts
+#include <fossil/xtest.h>   // basic test tools
+#include <fossil/xassert.h> // extra asserts
 
-#include <trilobite/module.hpp> // library under test
+#include <fossil/module.hpp> // library under test
 #include <string>
 
 //
@@ -75,13 +56,13 @@ XTEST_CASE_FIXTURE(project_tests, basic_run_of_boolean) {
 }
 
 XTEST_CASE_FIXTURE(project_tests, basic_run_of_subtract) {
-    TEST_ASSERT_TRUE(tscl::subtract(4, 2) == 2);
-    TEST_ASSERT_FALSE(tscl::subtract(2, 55) == 2);
+    TEST_ASSERT_TRUE(fscl::subtract(4, 2) == 2);
+    TEST_ASSERT_FALSE(fscl::subtract(2, 55) == 2);
 }
 
 XTEST_CASE_FIXTURE(project_tests, basic_run_of_adding) {
-    TEST_ASSERT_TRUE(tscl::add(2, 2) == 4);
-    TEST_ASSERT_FALSE(tscl::add(2, 3) == 42);
+    TEST_ASSERT_TRUE(fscl::add(2, 2) == 4);
+    TEST_ASSERT_FALSE(fscl::add(2, 3) == 42);
 }
 
 //
